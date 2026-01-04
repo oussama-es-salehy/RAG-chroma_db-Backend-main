@@ -1,0 +1,15 @@
+Title: Understanding “Attention Is All You Need” and the Rise of Transformers
+
+For several years, Natural Language Processing (NLP) was dominated by sequential models such as LSTMs and GRUs, which are capable of capturing long-term dependencies in text sequences. However, these models have significant limitations, including difficulty handling very long sequences and limited parallelism during training. It was in this context that the paper “Attention Is All You Need”, published by Vaswani et al. in 2017, marked a revolution in the field of NLP.
+
+The key concept introduced in this paper is the self-attention mechanism (or multi-head attention), which allows each element of a sequence to “attend” to all other elements and compute their relative importance. Unlike recurrent models, the Transformer does not process data sequentially; it considers all positions simultaneously, enabling massive parallelism and significantly accelerating training.
+
+The Transformer consists of two main blocks: the encoder and the decoder. The encoder transforms the input sequence into a rich representation of continuous vectors, while the decoder uses this representation to generate the output, whether it is a translation, a summary, or any other NLP task. Each layer of the Transformer includes a multi-head attention sublayer followed by a position-wise feed-forward layer, with normalization and dropout mechanisms to stabilize learning.
+
+A major innovation is the use of positional encoding, which injects positional information into the embeddings, since unlike RNNs, the Transformer has no intrinsic notion of word order. Positional embeddings are combined with word embeddings to enable the model to capture the structure of the sequence.
+
+Since its publication, “Attention Is All You Need” has given rise to a series of revolutionary Transformer-based models, such as BERT, GPT, T5, and many others. These models have demonstrated outstanding performance across various tasks, from text classification to automatic content generation, as well as question-answering and translation.
+
+Finally, the Transformer paved the way for the era of Large Language Models (LLMs), capable of processing vast amounts of text, generating coherent responses, and even performing complex reasoning. The key to this success lies in attention, which allows the model to focus on relevant parts of the information and create rich contextual representations.
+
+In summary, the paper “Attention Is All You Need” not only introduced an efficient and scalable architecture for NLP but also fundamentally transformed how we design language models. The attention mechanism is now at the heart of almost all modern NLP systems, and understanding it is essential for any researcher or engineer working in the field of artificial intelligence.
