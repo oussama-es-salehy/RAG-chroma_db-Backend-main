@@ -14,27 +14,22 @@ langchain-text-splitters>=0.2.0
 # =========================
 # Embeddings HuggingFace (NOUVELLE API)
 # =========================
-langchain-huggingface>=0.0.3
 sentence-transformers>=2.2.2
 torch>=2.1.0
 
 # =========================
 # Vector Store
 # =========================
-langchain-chroma>=0.1.4
 chromadb>=0.5.0
 
 # =========================
 # Data / utils
 # =========================
-numpy>=1.25
 python-dotenv>=1.0
 
 # =========================
 # Images / OCR (optionnel)
 # =========================
-Pillow>=10.0
-opencv-python>=4.8
 
 # =========================
 # Azure LLM
